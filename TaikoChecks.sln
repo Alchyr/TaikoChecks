@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaikoChecks", "TaikoChecks.csproj", "{D173E85C-FFA5-49D7-BDF7-A535B869EA5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapsetVerifierFramework", "..\MapsetVerifierFramework\MapsetVerifierFramework.csproj", "{63EF127D-9359-47BD-AAA0-8998A92B34A3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MapsetParser", "..\MapsetParser\MapsetParser.csproj", "{C9A18355-CFA1-4062-90AE-E0AAE1F3A190}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D173E85C-FFA5-49D7-BDF7-A535B869EA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D173E85C-FFA5-49D7-BDF7-A535B869EA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D173E85C-FFA5-49D7-BDF7-A535B869EA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D173E85C-FFA5-49D7-BDF7-A535B869EA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63EF127D-9359-47BD-AAA0-8998A92B34A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63EF127D-9359-47BD-AAA0-8998A92B34A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63EF127D-9359-47BD-AAA0-8998A92B34A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63EF127D-9359-47BD-AAA0-8998A92B34A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9A18355-CFA1-4062-90AE-E0AAE1F3A190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A18355-CFA1-4062-90AE-E0AAE1F3A190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A18355-CFA1-4062-90AE-E0AAE1F3A190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A18355-CFA1-4062-90AE-E0AAE1F3A190}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {567858BB-3532-48C8-9B3D-8D37F539E85A}
+	EndGlobalSection
+EndGlobal
