@@ -46,7 +46,7 @@ namespace TaikoChecks.checks.settings
             return new Dictionary<string, IssueTemplate>()
             {
                 { "Base Slider Velocity",
-                    new IssueTemplate(Issue.Level.Minor,
+                    new IssueTemplate(Issue.Level.Warning,
                         "{0} has a base slider velocity of {1}.",
                         "timestamp - ", "rate")
                     .WithCause(
@@ -56,7 +56,7 @@ namespace TaikoChecks.checks.settings
 
         public override IEnumerable<Issue> GetIssues(Beatmap aBeatmap)
         {
-            if (aBeatmap.difficultySettings.sliderMultiplier != 1.4)
+            if (aBeatmap.difficultySettings.sliderMultiplier != 1.4f)
                 yield return new Issue(GetTemplate("Base Slider Velocity"), aBeatmap,
                     aBeatmap.ToString(), aBeatmap.difficultySettings.sliderMultiplier);
         }

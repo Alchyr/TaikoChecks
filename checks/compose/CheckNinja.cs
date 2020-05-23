@@ -65,6 +65,7 @@ namespace TaikoChecks.checks.compose
         {
             //Combine consective ninja objects into single issues
 
+            float baseSv = aBeatmap.difficultySettings.sliderMultiplier / 1.4f; //Relative to a standard 1.4 base sv.
             float baseRate = 0;
             float rate = 0;
             int timingIndex = -1;
@@ -82,7 +83,7 @@ namespace TaikoChecks.checks.compose
                         if (aBeatmap.timingLines[timingIndex].uninherited)
                         {
                             //get bpm
-                            rate = baseRate = 60000.0f / float.Parse(aBeatmap.timingLines[timingIndex].code.Split(',')[1], CultureInfo.InvariantCulture);
+                            rate = baseRate = baseSv * 60000.0f / float.Parse(aBeatmap.timingLines[timingIndex].code.Split(',')[1], CultureInfo.InvariantCulture);
                         }
                         else
                         {
